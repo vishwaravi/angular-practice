@@ -1,0 +1,12 @@
+<p>Movies : </p>
+<ul>
+    <li 
+    *ngFor="let movie of movies; 
+    let i = index;
+    let isOdd = odd;
+    let isEven = even;"
+    [ngClass]="{'even-item' : isEven,
+    'odd-item' : isOdd}">
+        {{i+1}} - {{movie}}
+    </li>
+</ul>

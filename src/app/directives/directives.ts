@@ -1,0 +1,19 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-directives',
+  imports: [CommonModule],
+  templateUrl: './directives.html',
+  styleUrl: './directives.css',
+})
+export class Directives {
+  movies = [
+    'Dark Knight',
+    'Interstellar',
+    'Inception',
+    'Shutter Island',
+    'Seven',
+    'F1'
+  ]
+}
